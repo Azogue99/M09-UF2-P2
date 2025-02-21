@@ -30,7 +30,7 @@ public class Ex_05 {
         try {
             Thread.sleep(4000);  // Podem canviar el temps o eliminar-lo
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("Error en el sleep");
         }
 
         // Indiquem que el doctor acabi (no és estrictament necessari, però
@@ -46,7 +46,7 @@ public class Ex_05 {
         try {
             filDoctor.join();
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("Error en el join");
         }
 
         System.out.println("--- Fi de l'execució ---");
